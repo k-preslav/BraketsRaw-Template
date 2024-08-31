@@ -1,0 +1,13 @@
+# Ignore all obj and bin folders
+/BraketsTemplate/obj/
+/BraketsTemplate/bin/
+/MonoGame.ImGuiNet/obj/
+/MonoGame.ImGuiNet/bin/
+
+# Ignore user-specific files
+*.user
+*.suo
+
+# Ignore temporary files
+*.tmp
+*.log
