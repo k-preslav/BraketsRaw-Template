@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 
 namespace BraketsEngine;
 
@@ -18,13 +19,13 @@ public static class ParticleManager
 
     public static void Update()
     {
-        foreach (var emitter in _particleEmitters) 
+        foreach (var emitter in _particleEmitters.ToList()) 
             emitter.Update();
     }
 
     public static ParticleEmitter GetEmitter(string name)
     {
-        foreach (var emitter in _particleEmitters)
+        foreach (var emitter in _particleEmitters.ToList())
         {
             if (emitter.Name == name)
                 return emitter;
@@ -36,7 +37,7 @@ public static class ParticleManager
 
     public static void UnloadAll()
     {
-        foreach (var particleEmitter in _particleEmitters)
+        foreach (var particleEmitter in _particleEmitters.ToList())
         {
             particleEmitter.Unload();
         }
@@ -45,7 +46,7 @@ public static class ParticleManager
 
     public static void Unload(string name)
     {
-        foreach (var particleEmitter in _particleEmitters)
+        foreach (var particleEmitter in _particleEmitters.ToList())
         {
             if (particleEmitter.Name == name)
             {

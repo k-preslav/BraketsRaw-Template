@@ -42,10 +42,10 @@ public class Input
     {
         MouseState mouseState = Mouse.GetState();
         Point screenPosition = mouseState.Position;
-
+        
         Vector2 mousePositionWorld = new Vector2(
-            screenPosition.X + Globals.Camera.TargetPosition.X - (Globals.APP_Width / 2),
-            screenPosition.Y + Globals.Camera.TargetPosition.Y - (Globals.APP_Height / 2)
+            (screenPosition.X - (Globals.APP_Width / 2)) / Globals.Camera.Zoom + Globals.Camera.TargetPosition.X,
+            (screenPosition.Y - (Globals.APP_Height / 2)) / Globals.Camera.Zoom + Globals.Camera.TargetPosition.Y
         );
 
         return mousePositionWorld;
@@ -62,9 +62,9 @@ public class Input
     public static bool IsMouseClicked(int index)
     {
         if (index == 0)
-            return previousMouseState.LeftButton == ButtonState.Pressed && currentMouseState.LeftButton == ButtonState.Released;
+            return previousMouseState.LeftButton == ButtonState.Released && currentMouseState.LeftButton == ButtonState.Pressed;
         else if (index == 1)
-            return previousMouseState.RightButton == ButtonState.Pressed && currentMouseState.RightButton == ButtonState.Released;
+            return previousMouseState.RightButton == ButtonState.Released && currentMouseState.RightButton == ButtonState.Pressed;
 
         return false;
     }

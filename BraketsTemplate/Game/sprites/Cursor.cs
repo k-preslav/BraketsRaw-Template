@@ -2,6 +2,8 @@ using Microsoft.Xna.Framework;
 using BraketsEngine;
 using System.Threading.Tasks;
 using System.Threading;
+using Template;
+using Microsoft.Xna.Framework.Input;
 
 namespace Test;
 
@@ -14,15 +16,15 @@ public class Cursor : Sprite
     {
         cursorTrail = new ParticleEmitter("cursorParticles", new Vector2(0), new ParticleEmitterData
         {
-            angleVariance = 8,
+            angleVariance = 16,
             lifeSpanMin = 0.4f,
             lifeSpanMax = 15.2f,
-            emitCount = 2,
-            sizeStartMin = 12,
-            sizeStartMax = 16,
-            sizeEndMin = 20,
-            sizeEndMax = 24,
-            interval = 0.045f,
+            emitCount = 1,
+            sizeStartMin = 6,
+            sizeStartMax = 8,
+            sizeEndMin = 10,
+            sizeEndMax = 12,
+            interval = 0.01f,
             speedMin=25,
             speedMax=50 ,
             colorStart = Color.LightGreen,
@@ -35,11 +37,11 @@ public class Cursor : Sprite
             angleVariance = 360,
             lifeSpanMin = 1f,
             lifeSpanMax = 3.5f,
-            emitCount = 64,
-            sizeStartMin = 16,
-            sizeStartMax = 20,
-            sizeEndMin = 24,
-            sizeEndMax = 28,
+            emitCount = 128,
+            sizeStartMin = 6,
+            sizeStartMax = 8,
+            sizeEndMin = 12,
+            sizeEndMax = 14,
             interval = 0.075f,
             speedMin=250,
             speedMax=400 ,
@@ -47,6 +49,8 @@ public class Cursor : Sprite
             colorEnd = Color.LimeGreen,
             visible = false
         }, 3);
+
+        this.visible = false;
     }
 
     public override void Update(float dt)
@@ -56,8 +60,16 @@ public class Cursor : Sprite
 
         if (Input.IsMouseClicked(0))
         {
-            cursorClick.Position = this.Position;   
-            cursorClick.Burst(100);
+            var emitter = new ParticlesTwo();
+            emitter.Position = this.Position;
+            emitter.Burst(100);
+            Globals.Camera.Shake(5, 0.1f);
+        }
+
+
+        if (Input.IsDown(Keys.F))
+        {
+            cursorTrail.ModifyParticleDataProp("textureName", "test");
         }
     }
 }

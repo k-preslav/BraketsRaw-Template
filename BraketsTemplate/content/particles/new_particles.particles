@@ -1,0 +1,17 @@
+angleVariance:45
+lifeSpanMin:0,1
+lifeSpanMax:2
+speedMin:100
+speedMax:100
+sizeStartMin:1
+sizeStartMax:3
+sizeEndMin:24
+sizeEndMax:36
+colorStart:<1. 1. 0. 1>
+colorEnd:<1. 0. 0. 1>
+opacityStart:1
+opacityEnd:0
+interval:0,5
+emitCount:1
+visible:True
+textureName:builtin/default_texture

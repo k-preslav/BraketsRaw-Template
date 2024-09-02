@@ -1,0 +1,17 @@
+angleVariance:19,793
+lifeSpanMin:2,3
+lifeSpanMax:2,5
+speedMin:10
+speedMax:300
+sizeStartMin:1
+sizeStartMax:3
+sizeEndMin:30,365
+sizeEndMax:41,138
+colorStart:<1. 1. 0. 1>
+colorEnd:<1. 0. 0. 1>
+opacityStart:1
+opacityEnd:0
+interval:0,05
+emitCount:128
+visible:True
+textureName:builtin\_debug_draw_rect

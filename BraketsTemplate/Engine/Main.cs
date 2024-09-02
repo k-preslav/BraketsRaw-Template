@@ -26,6 +26,10 @@ public class Main : Game
 
     private bool HAS_INITIALIZED = false;
 
+    // To calculate the framerate
+    private float elapsedTime;
+    private int frameCount;
+
     public Main()
     {
         _graphics = new GraphicsDeviceManager(this);
@@ -121,7 +125,6 @@ public class Main : Game
 
         float dt = (float)gameTime.ElapsedGameTime.TotalSeconds;
         Globals.DEBUG_DT = dt;
-        Globals.DEBUG_FPS = (float)(1 / dt);
 
         Globals.Camera.CalculateMatrix();
 
@@ -164,10 +167,20 @@ public class Main : Game
         if (!HAS_INITIALIZED)
             return;
 
+        elapsedTime += (float)gameTime.ElapsedGameTime.TotalSeconds;
+        frameCount++;
+
+        if (elapsedTime >= 0.25f)
+        {
+            Globals.DEBUG_FPS = frameCount / elapsedTime;
+            frameCount = 0;
+            elapsedTime = 0f;
+        }
+
         GraphicsDevice.Clear(Globals.Camera.BackgroundColor);
 
         // ------- Game Layer -------
-        _spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.NonPremultiplied, transformMatrix: Globals.Camera.TranslationMatrix);
+        _spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, transformMatrix: Globals.Camera.TranslationMatrix);
 
         var sortedSprites = Sprites.OrderBy(sp => sp.Layer).ToList();
         foreach (var sp in sortedSprites)
