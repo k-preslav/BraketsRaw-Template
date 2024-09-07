@@ -32,11 +32,13 @@ public class Particle : Sprite
     private float _lifeSpanAmmount;
     private Vector2 _direction;
 
-    public Particle(Vector2 pos, ParticleData particleData, int layer) : base("particle", pos, "none", layer, false)
+    public Particle(Vector2 pos, ParticleData particleData, int layer) : base("particle", "none", layer, false)
     {
         _particleData = particleData;
         _lifeSpanLeft = particleData.lifeSpan;
         _lifeSpanAmmount = 1f;
+
+        base.Position = pos;
 
         if (_particleData.speed != 0)
         {
@@ -49,15 +51,15 @@ public class Particle : Sprite
         this.Load();
     }
 
-    public override void Update(float dt)
+    public override void Update()
     {
-        _lifeSpanLeft -= dt;
+        _lifeSpanLeft -= Globals.DEBUG_DT;
 
         _lifeSpanAmmount = MathHelper.Clamp(_lifeSpanLeft / _particleData.lifeSpan, 0, 1);
         this.Scale = MathHelper.Lerp(_particleData.sizeEnd, _particleData.sizeStart, _lifeSpanAmmount) / this.texture.Width;
         this.Tint = Color.Lerp(_particleData.colorEnd, _particleData.colorStart, _lifeSpanAmmount);
         this.Opacity = MathHelper.Clamp(MathHelper.Lerp(_particleData.opacityEnd, _particleData.opacityStart, _lifeSpanAmmount), 0, 1);   
-        this.Position += _direction * _particleData.speed * dt;
+        this.Position += _direction * _particleData.speed * Globals.DEBUG_DT;
 
         if (_lifeSpanLeft <= 0f)
         {
@@ -66,6 +68,6 @@ public class Particle : Sprite
             return;
         }
         
-        base.Update(dt);
+        base.Update();
     }
 }

@@ -1,3 +1,4 @@
+using BraketsTemplate.Engine.Sprites;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
@@ -6,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Mime;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace BraketsEngine;
 
@@ -30,10 +32,9 @@ public class Sprite
 
     internal bool overrideDraw = false;
 
-    public Sprite(string tag, Vector2 pos, string texName, int layer=0, bool auto_load=true)
+    public Sprite(string tag="none", string texName="builtin/default_texture", int layer=0, bool auto_load=true)
     {
         this.Tag = tag;
-        this.Position = pos;        
         this.textureName = texName;
         this.Layer = layer;
 
@@ -41,13 +42,17 @@ public class Sprite
             Load();
     }
 
-    public void Load()
+    public async void Load()
     {
-        this.texture = ResourceManager.GetTexture(textureName);
-        Globals.ENGINE_Main.AddSprite(this);
+        this.texture = await TextureManager.GetTexture(textureName);
+        SpriteManager.AddSprite(this);
     }
 
-    public virtual void Update(float dt) { }
+#pragma warning disable CS1998
+public virtual async Task Init() { }
+#pragma warning restore CS1998
+
+    public virtual void Update() { }
     public virtual void UpdateRect()
     {
         if (texture is null)
@@ -78,7 +83,7 @@ public class Sprite
 
     public Sprite HitsGet(string tag)
     {
-        foreach (var sprite in Globals.ENGINE_Main.Sprites.ToList())
+        foreach (var sprite in SpriteManager.Sprites.ToList())
         {
             try
             {
@@ -106,6 +111,6 @@ public class Sprite
 
     public void DestroySelf()
     {
-        Globals.ENGINE_Main.RemoveSprite(this);
+        SpriteManager.RemoveSprite(this);
     }
 }

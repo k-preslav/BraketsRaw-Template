@@ -7,9 +7,9 @@ public class UIImage : UIElement
 
     }
 
-    public void SetImage(string name)
+    public async void SetImage(string name)
     {
         base.textureName = name;
-        base.texture = ResourceManager.GetTexture(textureName);
+        base.texture = await TextureManager.GetTexture(textureName);
     }
 }

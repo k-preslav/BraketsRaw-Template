@@ -1,34 +1,22 @@
-using System;
-using System.Threading.Tasks;
-using System.Transactions;
 using BraketsEngine;
-using Breach;
-using ImGuiNET;
-using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
-using Template;
-using Test;
 
 public class GameManager
 {
-    Player p;
-
     public async void Start()
     {                   
         Globals.Camera.Center();
+        Globals.Camera.BackgroundColor = Globals.APP_ViewportColor;
 
         LoadingScreen.Initialize();
         LoadingScreen.Show();
 
-        p = new Player();
-        new Cursor();
-
-        new PPP();
+        await LevelManager.LoadLevel("test");
 
         await LoadingScreen.Hide();                
     }
 
-    public void Update(float dt)
+    public async void Update()
     {
         // if (Input.GetMouseState().ScrollWheelValue != 0)
         // {
@@ -37,6 +25,15 @@ public class GameManager
         //     zoomScroll = MathHelper.Clamp(zoomScroll, 0.1f, 10);
         //     Globals.Camera.SetZoom(zoomScroll);
         // }
+
+        if (Input.IsPressed(Keys.U))
+        {
+            LevelManager.UnloadLevel("test");
+        }
+        if (Input.IsPressed(Keys.R))
+        {
+            await LevelManager.ReloadLevel("test");
+        }
     }
 
     internal void Stop()

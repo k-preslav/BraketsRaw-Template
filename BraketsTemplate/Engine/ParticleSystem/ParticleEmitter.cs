@@ -135,10 +135,9 @@ public class ParticleEmitter
     List<Particle> particles = new List<Particle>();
     private bool enabled = true;
 
-    public ParticleEmitter(string name, Vector2 pos, ParticleEmitterData particleEmitterData, int layer, bool drawOnLoading = false)
+    public ParticleEmitter(string name, ParticleEmitterData particleEmitterData, int layer, bool drawOnLoading = false)
     {
         this.Name = name;
-        this.Position = pos;
         this.Layer = layer;
         this.enabled = true;
         this.drawOnLoading = drawOnLoading;
@@ -151,6 +150,9 @@ public class ParticleEmitter
 
     private void Emit()
     {
+        if (LoadingScreen.isLoading && this.drawOnLoading == false)
+            return;
+
         ParticleData particleData = _emitterData.particleData;
         particleData.sizeStart = Randomize.FloatInRange(_emitterData.sizeStartMin, _emitterData.sizeStartMax);
         particleData.sizeEnd = Randomize.FloatInRange(_emitterData.sizeEndMin, _emitterData.sizeEndMax);

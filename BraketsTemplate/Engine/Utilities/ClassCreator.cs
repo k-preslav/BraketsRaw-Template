@@ -1,9 +1,10 @@
 using System;
+using System.Threading.Tasks;
 namespace BraketsEngine;
 
 public class ClassCreator
 {
-    public static object Create(string name, object[] args)
+    public static async Task<object> Create(string name, object[] args)
     {
         Type type = Type.GetType(name);
 
@@ -19,6 +20,14 @@ public class ClassCreator
             if (constructorInfo != null)
             {
                 var instance = constructorInfo.Invoke(args);
+
+                var initializeMethod = type.GetMethod("Init");
+                if (initializeMethod != null)
+                {
+                    var initializeTask = (Task)initializeMethod.Invoke(instance, null);
+                    await initializeTask;
+                }
+
                 return instance;
             }
             else

@@ -45,7 +45,7 @@ public abstract class UIElement : Sprite
     public UIElement(string text = "UI Element", UIAllign allign = UIAllign.TopLeft, 
                     int marginX = 0, int marginY = 0, int padX = 0, int padY = 0,
                     string fontName = "NeorisMedium", int fontSize = 24, string textureName = "ui/ui_default")
-            : base("ui_element", new Vector2(0), textureName, 1, false)
+            : base("ui_element", textureName, 1, false)
     {
         this.Text = text;
         base.overrideDraw = true;
@@ -55,14 +55,14 @@ public abstract class UIElement : Sprite
         this.margin = new Vector2(marginX, marginY);
         this.padding = new Vector2(padX, padY);
 
-        this._font = ResourceManager.GetFont(fontName, fontSize);
+        this._font = FontManager.GetFont(fontName, fontSize).Result;
         _curFontName = fontName;
 
-        base.texture = ResourceManager.GetTexture(base.textureName);
+        base.texture = TextureManager.GetTexture(base.textureName).Result;
         this.Size = new Vector2(base.texture.Width, base.texture.Height);
     }
 
-    public override void Update(float dt)
+    public override void Update()
     {
         if (this.allign == UIAllign.TopLeft)
         {
@@ -141,15 +141,15 @@ public abstract class UIElement : Sprite
         );
     }
 
-    public void SetFont(string name)
+    public async void SetFont(string name)
     {
         int curSize = (int)_font.FontSize;
-        _font = ResourceManager.GetFont(name, curSize);
+        _font = await FontManager.GetFont(name, curSize);
         _curFontName = name;
     }
-    public void SetFontSize(int size)
+    public async void SetFontSize(int size)
     {
-        _font = ResourceManager.GetFont(_curFontName, size);
+        _font = await FontManager.GetFont(_curFontName, size);
     }
     public void SetAlign(UIAllign allign, Vector2 margin)
     {

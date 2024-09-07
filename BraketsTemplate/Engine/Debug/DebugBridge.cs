@@ -1,3 +1,4 @@
+using BraketsTemplate.Engine.Sprites;
 using System;
 using System.Threading.Tasks;
 
@@ -10,7 +11,7 @@ public class DebugBridge
             if (Globals.BRIDGE_Client != null)
             {
                 string data = $"{Globals.DEBUG_FPS}|{Globals.DEBUG_MEMORY}|" +
-                              $"{Globals.ENGINE_Main.Sprites.Count}|{Globals.DEBUG_GC_CALLS}|" +
+                              $"{SpriteManager.Sprites.Count}|{Globals.DEBUG_GC_CALLS}|" +
                               $"{Globals.DEBUG_THREADS_COUNT}|{Globals.DEBUG_DT}";
 
                 Globals.BRIDGE_Client.SendMessageAsync(data);

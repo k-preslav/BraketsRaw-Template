@@ -13,6 +13,8 @@ namespace BraketsEngine
         public Vector2 TargetPosition { get; private set; }
         public Matrix TranslationMatrix { get; private set; }
 
+        internal float viewportScale = 1f;
+
         // Camera shake variables
         private float shakeIntensity;
         private float shakeDuration;
@@ -32,6 +34,8 @@ namespace BraketsEngine
 
         public void CalculateMatrix()
         {
+            Zoom = viewportScale;
+
             var screenCenter = new Vector2(Globals.APP_Width / 2, Globals.APP_Height / 2);
 
             var offset = TargetPosition - screenCenter / Zoom;
@@ -57,6 +61,7 @@ namespace BraketsEngine
 
             TranslationMatrix = Matrix.CreateTranslation(dx, dy, 0f) * Matrix.CreateScale(Zoom, Zoom, 1f);
         }
+
 
 
         public void Follow(Sprite target, float smoothStep)

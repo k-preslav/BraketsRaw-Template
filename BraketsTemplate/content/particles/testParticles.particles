@@ -1,17 +1,17 @@
 angleVariance:180
 lifeSpanMin:0,1
-lifeSpanMax:1,053
-speedMin:10
-speedMax:300
-sizeStartMin:1
-sizeStartMax:3
-sizeEndMin:47,046
-sizeEndMax:50
+lifeSpanMax:10,868
+speedMin:84,004
+speedMax:236,826
+sizeStartMin:1,5
+sizeStartMax:5
+sizeEndMin:60
+sizeEndMax:75
 colorStart:<0,13367605. 1. 0. 1>
 colorEnd:<0. 0,03598976. 1. 1>
 opacityStart:1
 opacityEnd:0
 interval:0,01
-emitCount:64
+emitCount:32
 visible:True
-textureName:builtin\default_texture
+textureName:builtin\_debug_draw_rect

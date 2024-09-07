@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using BraketsTemplate.Engine.Sprites;
 using FontStashSharp;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -13,7 +14,6 @@ namespace BraketsEngine;
 
 public class Main : Game
 {
-    public List<Sprite> Sprites;
     public List<UIElement> UI;
 
     private GraphicsDeviceManager _graphics;
@@ -78,7 +78,6 @@ public class Main : Game
 
         new Camera(Vector2.Zero);
 
-        this.Sprites = new List<Sprite>();
         this.UI = new List<UIElement>();
 
         if (Globals.BRIDGE_Run)
@@ -94,14 +93,17 @@ public class Main : Game
                 await bridgeClient.ConnectAsync(Globals.BRIDGE_Hostname, Globals.BRIDGE_Port);
 
                 Globals.BRIDGE_Client = bridgeClient;
-                Globals.BRIDGE_Client.OnReceive += (string msg) =>
+                Globals.BRIDGE_Client.OnReceive += async (string msg) =>
                 {
                     if (msg == "stop") Exit();
+                    else if (msg.Split(" ")[0] == "reloadlevel") await LevelManager.ReloadLevel(msg.Split(" ")[1]); 
                 };
             }
         }
         HAS_INITIALIZED = true;
         _graphics.ApplyChanges();
+
+        HandleResize.Handle();
 
         base.Initialize();
     }
@@ -131,7 +133,7 @@ public class Main : Game
         ParticleManager.Update();
         foreach (var elem in UI.ToList())
         {
-            elem.Update(dt);
+            elem.Update();
             elem.UpdateRect();
         }
 
@@ -147,14 +149,21 @@ public class Main : Game
             }
         }
 
-        _gameManager?.Update(dt);
-        foreach (var sp in Sprites.ToList())
+        _gameManager?.Update();
+        try
         {
-            if ((!Globals.STATUS_Loading && !LoadingScreen.isLoading) || sp.drawOnLoading)
+            foreach (var sp in SpriteManager.Sprites.ToList())
             {
-                sp.Update(dt);
-                sp.UpdateRect();
+                if ((!Globals.STATUS_Loading && !LoadingScreen.isLoading) || sp.drawOnLoading)
+                {
+                    sp.Update();
+                    sp.UpdateRect();
+                }
             }
+        }
+        catch (Exception ex)
+        {
+            Debug.Warning($"Failed to update sprite list. \n Ex: {ex.Message}");
         }
 
         base.Update(gameTime);
@@ -182,11 +191,18 @@ public class Main : Game
         // ------- Game Layer -------
         _spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.AlphaBlend, transformMatrix: Globals.Camera.TranslationMatrix);
 
-        var sortedSprites = Sprites.OrderBy(sp => sp.Layer).ToList();
-        foreach (var sp in sortedSprites)
+        try
         {
-            if ((!Globals.STATUS_Loading && !LoadingScreen.isLoading) || sp.drawOnLoading)
-                sp.Draw();
+            var sortedSprites = SpriteManager.Sprites.OrderBy(sp => sp.Layer).ToList();
+            foreach (var sp in sortedSprites)
+            {
+                if ((!Globals.STATUS_Loading && !LoadingScreen.isLoading) || sp.drawOnLoading)
+                    sp.Draw();
+            }
+        }
+        catch (Exception ex)
+        {
+            Debug.Warning($"Failed to draw sprite list. \n Ex: {ex.Message}");
         }
         _spriteBatch.End();
 
@@ -215,9 +231,6 @@ public class Main : Game
         base.Draw(gameTime);
     }
 
-    public void AddSprite(Sprite sp) => Sprites.Add(sp);
-    public void RemoveSprite(Sprite sp) => Sprites.Remove(sp);
-
     public void AddUIElement(UIElement elem) => UI.Add(elem);
     public void RemoveUIElement(UIElement elem) => UI.Remove(elem);
 
@@ -228,9 +241,6 @@ public class Main : Game
     }
     private void OnResize(object sender, EventArgs e)
     {
-        Globals.APP_Width = Window.ClientBounds.Width;
-        Globals.APP_Height = Window.ClientBounds.Height;
-
-        Debug.Log($"Resized window to size: {Globals.APP_Width}x{Globals.APP_Height}");
+        HandleResize.Handle(Window);
     }
 }

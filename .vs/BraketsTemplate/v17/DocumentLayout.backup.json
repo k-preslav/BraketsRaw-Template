@@ -3,84 +3,28 @@
   "WorkspaceRootPath": "D:\\BraketsRaw-Template\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|d:\\braketsraw-template\\braketstemplate\\engine\\math\\vecparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|solutionrelative:braketstemplate\\engine\\math\\vecparser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|d:\\braketsraw-template\\braketstemplate\\engine\\graphics\\particlesystem\\particleemitter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|solutionrelative:braketstemplate\\engine\\graphics\\particlesystem\\particleemitter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|d:\\braketsraw-template\\braketstemplate\\engine\\graphics\\particlesystem\\particle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|solutionrelative:braketstemplate\\engine\\graphics\\particlesystem\\particle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|d:\\braketsraw-template\\braketstemplate\\engine\\graphics\\particlesystem\\particlemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|solutionrelative:braketstemplate\\engine\\graphics\\particlesystem\\particlemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|d:\\braketsraw-template\\braketstemplate\\engine\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|solutionrelative:braketstemplate\\engine\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|d:\\braketsraw-template\\braketstemplate\\game\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|solutionrelative:braketstemplate\\game\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|d:\\braketsraw-template\\braketstemplate\\game\\sprites\\cursor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|solutionrelative:braketstemplate\\game\\sprites\\cursor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|d:\\braketsraw-template\\braketstemplate\\engine\\input\\input.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|solutionrelative:braketstemplate\\engine\\input\\input.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|d:\\braketsraw-template\\braketstemplate\\engine\\camera\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|solutionrelative:braketstemplate\\engine\\camera\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|d:\\braketsraw-template\\braketstemplate\\engine\\resize\\handleresize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|solutionrelative:braketstemplate\\engine\\resize\\handleresize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|d:\\braketsraw-template\\braketstemplate\\engine\\globals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|solutionrelative:braketstemplate\\engine\\globals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|d:\\braketsraw-template\\braketstemplate\\game\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|solutionrelative:braketstemplate\\game\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|d:\\braketsraw-template\\braketstemplate\\engine\\ui\\prebuilt\\loadingscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|solutionrelative:braketstemplate\\engine\\ui\\prebuilt\\loadingscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|d:\\braketsraw-template\\braketstemplate\\engine\\ui\\uianimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|solutionrelative:braketstemplate\\engine\\ui\\uianimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|d:\\braketsraw-template\\braketstemplate\\engine\\ui\\uiscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|solutionrelative:braketstemplate\\engine\\ui\\uiscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|d:\\braketsraw-template\\braketstemplate\\engine\\debug\\debugdraw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|solutionrelative:braketstemplate\\engine\\debug\\debugdraw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|d:\\braketsraw-template\\braketstemplate\\engine\\debug\\debugui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|solutionrelative:braketstemplate\\engine\\debug\\debugui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|d:\\braketsraw-template\\braketstemplate\\engine\\graphics\\sprite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|solutionrelative:braketstemplate\\engine\\graphics\\sprite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|d:\\braketsraw-template\\braketstemplate\\engine\\ui\\elements\\uiimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|solutionrelative:braketstemplate\\engine\\ui\\elements\\uiimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|d:\\braketsraw-template\\braketstemplate\\engine\\resourcemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|solutionrelative:braketstemplate\\engine\\resourcemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|d:\\braketsraw-template\\braketstemplate\\braketstemplate.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|solutionrelative:braketstemplate\\braketstemplate.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|d:\\braketsraw-template\\braketstemplate\\engine\\ui\\uielement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|solutionrelative:braketstemplate\\engine\\ui\\uielement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|d:\\braketsraw-template\\braketstemplate\\game\\sprites\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F611F17E-2997-49AC-94CE-EE6888EAE766}|BraketsTemplate\\BraketsTemplate.csproj|solutionrelative:braketstemplate\\game\\sprites\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -90,251 +34,85 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ResourceManager.cs",
-              "DocumentMoniker": "D:\\BraketsRaw-Template\\BraketsTemplate\\Engine\\ResourceManager.cs",
-              "RelativeDocumentMoniker": "BraketsTemplate\\Engine\\ResourceManager.cs",
-              "ToolTip": "D:\\BraketsRaw-Template\\BraketsTemplate\\Engine\\ResourceManager.cs",
-              "RelativeToolTip": "BraketsTemplate\\Engine\\ResourceManager.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAzwF4AAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T12:40:51.056Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "BraketsTemplate.csproj",
-              "DocumentMoniker": "D:\\BraketsRaw-Template\\BraketsTemplate\\BraketsTemplate.csproj",
-              "RelativeDocumentMoniker": "BraketsTemplate\\BraketsTemplate.csproj",
-              "ToolTip": "D:\\BraketsRaw-Template\\BraketsTemplate\\BraketsTemplate.csproj",
-              "RelativeToolTip": "BraketsTemplate\\BraketsTemplate.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-08-31T12:40:11.628Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "DebugDraw.cs",
-              "DocumentMoniker": "D:\\BraketsRaw-Template\\BraketsTemplate\\Engine\\Debug\\DebugDraw.cs",
-              "RelativeDocumentMoniker": "BraketsTemplate\\Engine\\Debug\\DebugDraw.cs",
-              "ToolTip": "D:\\BraketsRaw-Template\\BraketsTemplate\\Engine\\Debug\\DebugDraw.cs",
-              "RelativeToolTip": "BraketsTemplate\\Engine\\Debug\\DebugDraw.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T12:39:53.316Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "UIElement.cs",
-              "DocumentMoniker": "D:\\BraketsRaw-Template\\BraketsTemplate\\Engine\\UI\\UIElement.cs",
-              "RelativeDocumentMoniker": "BraketsTemplate\\Engine\\UI\\UIElement.cs",
-              "ToolTip": "D:\\BraketsRaw-Template\\BraketsTemplate\\Engine\\UI\\UIElement.cs",
-              "RelativeToolTip": "BraketsTemplate\\Engine\\UI\\UIElement.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAgwC4AAABiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T12:39:39.474Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ParticleEmitter.cs",
-              "DocumentMoniker": "D:\\BraketsRaw-Template\\BraketsTemplate\\Engine\\Graphics\\ParticleSystem\\ParticleEmitter.cs",
-              "RelativeDocumentMoniker": "BraketsTemplate\\Engine\\Graphics\\ParticleSystem\\ParticleEmitter.cs",
-              "ToolTip": "D:\\BraketsRaw-Template\\BraketsTemplate\\Engine\\Graphics\\ParticleSystem\\ParticleEmitter.cs",
-              "RelativeToolTip": "BraketsTemplate\\Engine\\Graphics\\ParticleSystem\\ParticleEmitter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T12:39:25.187Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "D:\\BraketsRaw-Template\\BraketsTemplate\\Game\\GameManager.cs",
-              "RelativeDocumentMoniker": "BraketsTemplate\\Game\\GameManager.cs",
-              "ToolTip": "D:\\BraketsRaw-Template\\BraketsTemplate\\Game\\GameManager.cs",
-              "RelativeToolTip": "BraketsTemplate\\Game\\GameManager.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAQwBkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T15:38:17.781Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "DebugUI.cs",
-              "DocumentMoniker": "D:\\BraketsRaw-Template\\BraketsTemplate\\Engine\\Debug\\DebugUI.cs",
-              "RelativeDocumentMoniker": "BraketsTemplate\\Engine\\Debug\\DebugUI.cs",
-              "ToolTip": "D:\\BraketsRaw-Template\\BraketsTemplate\\Engine\\Debug\\DebugUI.cs",
-              "RelativeToolTip": "BraketsTemplate\\Engine\\Debug\\DebugUI.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T12:42:17.022Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "UIScreen.cs",
-              "DocumentMoniker": "D:\\BraketsRaw-Template\\BraketsTemplate\\Engine\\UI\\UIScreen.cs",
-              "RelativeDocumentMoniker": "BraketsTemplate\\Engine\\UI\\UIScreen.cs",
-              "ToolTip": "D:\\BraketsRaw-Template\\BraketsTemplate\\Engine\\UI\\UIScreen.cs",
-              "RelativeToolTip": "BraketsTemplate\\Engine\\UI\\UIScreen.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T12:43:36.934Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ParticleManager.cs",
-              "DocumentMoniker": "D:\\BraketsRaw-Template\\BraketsTemplate\\Engine\\Graphics\\ParticleSystem\\ParticleManager.cs",
-              "RelativeDocumentMoniker": "BraketsTemplate\\Engine\\Graphics\\ParticleSystem\\ParticleManager.cs",
-              "ToolTip": "D:\\BraketsRaw-Template\\BraketsTemplate\\Engine\\Graphics\\ParticleSystem\\ParticleManager.cs",
-              "RelativeToolTip": "BraketsTemplate\\Engine\\Graphics\\ParticleSystem\\ParticleManager.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAowBcAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T12:39:28.342Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Particle.cs",
-              "DocumentMoniker": "D:\\BraketsRaw-Template\\BraketsTemplate\\Engine\\Graphics\\ParticleSystem\\Particle.cs",
-              "RelativeDocumentMoniker": "BraketsTemplate\\Engine\\Graphics\\ParticleSystem\\Particle.cs",
-              "ToolTip": "D:\\BraketsRaw-Template\\BraketsTemplate\\Engine\\Graphics\\ParticleSystem\\Particle.cs",
-              "RelativeToolTip": "BraketsTemplate\\Engine\\Graphics\\ParticleSystem\\Particle.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAYwCsAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T12:39:16.702Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "VecParser.cs",
-              "DocumentMoniker": "D:\\BraketsRaw-Template\\BraketsTemplate\\Engine\\Math\\VecParser.cs",
-              "RelativeDocumentMoniker": "BraketsTemplate\\Engine\\Math\\VecParser.cs",
-              "ToolTip": "D:\\BraketsRaw-Template\\BraketsTemplate\\Engine\\Math\\VecParser.cs",
-              "RelativeToolTip": "BraketsTemplate\\Engine\\Math\\VecParser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T10:23:11.628Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Main.cs",
-              "DocumentMoniker": "D:\\BraketsRaw-Template\\BraketsTemplate\\Engine\\Main.cs",
-              "RelativeDocumentMoniker": "BraketsTemplate\\Engine\\Main.cs",
-              "ToolTip": "D:\\BraketsRaw-Template\\BraketsTemplate\\Engine\\Main.cs",
-              "RelativeToolTip": "BraketsTemplate\\Engine\\Main.cs",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAYwIIAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T12:46:16.549Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "LoadingScreen.cs",
-              "DocumentMoniker": "D:\\BraketsRaw-Template\\BraketsTemplate\\Engine\\UI\\Prebuilt\\LoadingScreen.cs",
-              "RelativeDocumentMoniker": "BraketsTemplate\\Engine\\UI\\Prebuilt\\LoadingScreen.cs",
-              "ToolTip": "D:\\BraketsRaw-Template\\BraketsTemplate\\Engine\\UI\\Prebuilt\\LoadingScreen.cs",
-              "RelativeToolTip": "BraketsTemplate\\Engine\\UI\\Prebuilt\\LoadingScreen.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T12:41:13.107Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "UIImage.cs",
-              "DocumentMoniker": "D:\\BraketsRaw-Template\\BraketsTemplate\\Engine\\UI\\Elements\\UIImage.cs",
-              "RelativeDocumentMoniker": "BraketsTemplate\\Engine\\UI\\Elements\\UIImage.cs",
-              "ToolTip": "D:\\BraketsRaw-Template\\BraketsTemplate\\Engine\\UI\\Elements\\UIImage.cs",
-              "RelativeToolTip": "BraketsTemplate\\Engine\\UI\\Elements\\UIImage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T12:41:22.763Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UIAnimator.cs",
-              "DocumentMoniker": "D:\\BraketsRaw-Template\\BraketsTemplate\\Engine\\UI\\UIAnimator.cs",
-              "RelativeDocumentMoniker": "BraketsTemplate\\Engine\\UI\\UIAnimator.cs",
-              "ToolTip": "D:\\BraketsRaw-Template\\BraketsTemplate\\Engine\\UI\\UIAnimator.cs",
-              "RelativeToolTip": "BraketsTemplate\\Engine\\UI\\UIAnimator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T12:43:40.237Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Input.cs",
-              "DocumentMoniker": "D:\\BraketsRaw-Template\\BraketsTemplate\\Engine\\Input\\Input.cs",
-              "RelativeDocumentMoniker": "BraketsTemplate\\Engine\\Input\\Input.cs",
-              "ToolTip": "D:\\BraketsRaw-Template\\BraketsTemplate\\Engine\\Input\\Input.cs",
-              "RelativeToolTip": "BraketsTemplate\\Engine\\Input\\Input.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowDAAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T15:44:39.798Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Cursor.cs",
-              "DocumentMoniker": "D:\\BraketsRaw-Template\\BraketsTemplate\\Game\\sprites\\Cursor.cs",
-              "RelativeDocumentMoniker": "BraketsTemplate\\Game\\sprites\\Cursor.cs",
-              "ToolTip": "D:\\BraketsRaw-Template\\BraketsTemplate\\Game\\sprites\\Cursor.cs",
-              "RelativeToolTip": "BraketsTemplate\\Game\\sprites\\Cursor.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAABAAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T12:39:11.815Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Player.cs",
-              "DocumentMoniker": "D:\\BraketsRaw-Template\\BraketsTemplate\\Game\\sprites\\Player.cs",
-              "RelativeDocumentMoniker": "BraketsTemplate\\Game\\sprites\\Player.cs",
-              "ToolTip": "D:\\BraketsRaw-Template\\BraketsTemplate\\Game\\sprites\\Player.cs",
-              "RelativeToolTip": "BraketsTemplate\\Game\\sprites\\Player.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T12:39:06.1Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Sprite.cs",
-              "DocumentMoniker": "D:\\BraketsRaw-Template\\BraketsTemplate\\Engine\\Graphics\\Sprite.cs",
-              "RelativeDocumentMoniker": "BraketsTemplate\\Engine\\Graphics\\Sprite.cs",
-              "ToolTip": "D:\\BraketsRaw-Template\\BraketsTemplate\\Engine\\Graphics\\Sprite.cs",
-              "RelativeToolTip": "BraketsTemplate\\Engine\\Graphics\\Sprite.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T12:38:38.709Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "Camera.cs",
               "DocumentMoniker": "D:\\BraketsRaw-Template\\BraketsTemplate\\Engine\\Camera\\Camera.cs",
               "RelativeDocumentMoniker": "BraketsTemplate\\Engine\\Camera\\Camera.cs",
               "ToolTip": "D:\\BraketsRaw-Template\\BraketsTemplate\\Engine\\Camera\\Camera.cs",
               "RelativeToolTip": "BraketsTemplate\\Engine\\Camera\\Camera.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAUwCwAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAgwD8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T12:01:18.204Z"
+              "WhenOpened": "2024-09-06T15:56:59.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HandleResize.cs",
+              "DocumentMoniker": "D:\\BraketsRaw-Template\\BraketsTemplate\\Engine\\Resize\\HandleResize.cs",
+              "RelativeDocumentMoniker": "BraketsTemplate\\Engine\\Resize\\HandleResize.cs",
+              "ToolTip": "D:\\BraketsRaw-Template\\BraketsTemplate\\Engine\\Resize\\HandleResize.cs",
+              "RelativeToolTip": "BraketsTemplate\\Engine\\Resize\\HandleResize.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T15:52:35.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Main.cs",
+              "DocumentMoniker": "D:\\BraketsRaw-Template\\BraketsTemplate\\Engine\\Main.cs",
+              "RelativeDocumentMoniker": "BraketsTemplate\\Engine\\Main.cs",
+              "ToolTip": "D:\\BraketsRaw-Template\\BraketsTemplate\\Engine\\Main.cs",
+              "RelativeToolTip": "BraketsTemplate\\Engine\\Main.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAUwGAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T15:51:34.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoadingScreen.cs",
+              "DocumentMoniker": "D:\\BraketsRaw-Template\\BraketsTemplate\\Engine\\UI\\Prebuilt\\LoadingScreen.cs",
+              "RelativeDocumentMoniker": "BraketsTemplate\\Engine\\UI\\Prebuilt\\LoadingScreen.cs",
+              "ToolTip": "D:\\BraketsRaw-Template\\BraketsTemplate\\Engine\\UI\\Prebuilt\\LoadingScreen.cs",
+              "RelativeToolTip": "BraketsTemplate\\Engine\\UI\\Prebuilt\\LoadingScreen.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAkwE8AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T15:49:04.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "D:\\BraketsRaw-Template\\BraketsTemplate\\Game\\GameManager.cs",
+              "RelativeDocumentMoniker": "BraketsTemplate\\Game\\GameManager.cs",
+              "ToolTip": "D:\\BraketsRaw-Template\\BraketsTemplate\\Game\\GameManager.cs",
+              "RelativeToolTip": "BraketsTemplate\\Game\\GameManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T15:46:52.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GLOBALS.cs",
+              "DocumentMoniker": "D:\\BraketsRaw-Template\\BraketsTemplate\\Engine\\GLOBALS.cs",
+              "RelativeDocumentMoniker": "BraketsTemplate\\Engine\\GLOBALS.cs",
+              "ToolTip": "D:\\BraketsRaw-Template\\BraketsTemplate\\Engine\\GLOBALS.cs",
+              "RelativeToolTip": "BraketsTemplate\\Engine\\GLOBALS.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAYwF4AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-06T15:42:29.495Z",
+              "EditorCaption": ""
             }
           ]
         }

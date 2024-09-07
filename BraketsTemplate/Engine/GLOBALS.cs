@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Media;
@@ -18,12 +19,15 @@ public static class Globals
 
     #region APPLICATION PROPERTIES
     public static string ENGINE_Version = "1";
-    public static string APP_Title = "Brakets";
+    public static string APP_Title = "Brakets Game";
     public static string APP_Version = "1";
-    public static int APP_Width = 512;
-    public static int APP_Height = 512;
+    public static int APP_Width = 1280;
+    public static int APP_Height = 720;
+    public static int APP_ViewportWidth = 1920;
+    public static int APP_ViewportHeight = 1080;
     public static bool APP_Resizable = true;
     public static bool APP_VSync = true;
+    public static Color APP_ViewportColor = Color.Cyan;
     public static void LOAD_APP_P()
     {
         Debug.Log("[GLOBALS] Loading application properties...");
@@ -32,7 +36,7 @@ public static class Globals
         string[] properties = File.ReadAllLines($"{Globals.ArgsPath}/game.properties");
         foreach (var line in properties)
         {
-            string[] split = line.Trim().Split(",");
+            string[] split = line.Trim().Split(":");
             string key = split[0];      
             string value = split[1];
 
@@ -57,6 +61,18 @@ public static class Globals
                 case "app_height":
                     APP_Height = int.Parse(value);
                     Debug.Log($"\t - APP Height: {value}");
+                    break;
+                case "app_view_width":
+                    APP_ViewportWidth = int.Parse(value);
+                    Debug.Log($"\t - APP Viewport Width: {value}");
+                    break;
+                case "app_view_height":
+                    APP_ViewportHeight = int.Parse(value);
+                    Debug.Log($"\t - APP Viewport Height: {value}");
+                    break;
+                case "app_view_color":
+                    APP_ViewportColor = new Color(VecParser.ParseVec4(value));
+                    Debug.Log($"\t - APP Viewport Color: {APP_ViewportColor}");
                     break;
                 case "app_resizable":
                     APP_Resizable = bool.Parse(value);

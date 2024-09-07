@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using BraketsTemplate.Engine.Sprites;
 using FontStashSharp;
 using ImGuiNET;
 using Microsoft.Xna.Framework;
@@ -83,19 +84,19 @@ public class DebugUI
         }
 
         sp.DrawString(
-            ResourceManager.GetFont("NeorisMedium", 32), $"{_currentFps.ToString("0.0")} fps", 
+            FontManager.GetFont("NeorisMedium", 32).Result, $"{_currentFps.ToString("0.0")} fps", 
             new Vector2(10, 10), Color.White * 0.75f, effect: FontSystemEffect.Stroked, effectAmount: 3
         );
         sp.DrawString(
-            ResourceManager.GetFont("NeorisMedium", 24), $"Version: {Globals.APP_Version}", 
+            FontManager.GetFont("NeorisMedium", 24).Result, $"Version: {Globals.APP_Version}", 
             new Vector2(10,45), Color.White * 0.75f, effect: FontSystemEffect.Stroked, effectAmount: 2
         );
         sp.DrawString(
-            ResourceManager.GetFont("NeorisMedium", 24), $"VSync: {Globals.APP_VSync}", 
+            FontManager.GetFont("NeorisMedium", 24).Result, $"VSync: {Globals.APP_VSync}", 
             new Vector2(10, 70), Color.White * 0.75f, effect: FontSystemEffect.Stroked, effectAmount: 2
         );
         sp.DrawString(
-            ResourceManager.GetFont("NeorisMedium", 24), $"Sprites: {Globals.ENGINE_Main.Sprites.Count}", 
+            FontManager.GetFont("NeorisMedium", 24).Result, $"Sprites: {SpriteManager.Sprites.Count}", 
             new Vector2(10, 95), Color.White * 0.75f, effect: FontSystemEffect.Stroked, effectAmount: 2
         );
     }

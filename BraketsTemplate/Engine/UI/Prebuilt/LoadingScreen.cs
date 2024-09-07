@@ -15,6 +15,8 @@ public class LoadingScreen
 
     private static bool isInitialized = false;
 
+    private static Color startColor;
+
     public static void Initialize()
     {
         if (isInitialized)
@@ -52,6 +54,7 @@ public class LoadingScreen
 
     public static void Show()
     {
+        startColor = Globals.Camera.BackgroundColor;
         minimumLoadingTime = new TimeSpan(0, 0, 0, 0, Randomize.IntInRange(975, 2345));
 
         loadingScreen.Show();
@@ -73,6 +76,8 @@ public class LoadingScreen
         }
 
         Debug.Log($" - Total loading time: {realLoadingTime.TotalMilliseconds + waitTime.TotalMilliseconds} ms");
+
+        Globals.Camera.BackgroundColor = startColor;
 
         loadingScreen.Hide();
         isLoading = false;

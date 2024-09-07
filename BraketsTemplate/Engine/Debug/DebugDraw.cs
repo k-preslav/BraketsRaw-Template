@@ -4,8 +4,10 @@ namespace BraketsEngine;
 
 public class DebugDraw
 {
-    public static void DrawRect(Rectangle rect, Color color)
+    public static async void DrawRect(Rectangle rect, Color color)
     {
-        Globals.ENGINE_SpriteBatch.Draw(ResourceManager.GetTexture("builtin/_debug_draw_rect"), rect, color);
+        Globals.ENGINE_SpriteBatch.Draw(
+            await TextureManager.GetTexture("builtin/_debug_draw_rect"), rect, color
+        );
     }
 }
