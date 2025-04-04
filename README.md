@@ -1,1 +1,2 @@
-A RAW Game Template for the [(Brakets Engine)https://github.com/k-preslav/BraketsEditor]
+A RAW Game Template for the Brakets Engine 
+https://github.com/k-preslav/BraketsEditor
